@@ -9,7 +9,7 @@ RUN git config --system --add safe.directory /workspace
 WORKDIR /workspace/frontend
 
 COPY package*.json ./
-RUN npm install && npm cache clean --force
+RUN npm install --verbose && npm cache clean --force
 COPY . .
 
 # VITE default port
