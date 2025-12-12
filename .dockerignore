@@ -1,0 +1,25 @@
+# .dockerignore
+
+# Ignore all node_modules in any subdirectory
+**/node_modules
+**/npm-debug.log
+
+# Ignore build artifacts
+**/dist
+**/coverage
+
+# Ignore git metadata
+.git
+.gitignore
+
+# Ignore env files (safety)
+.env
+.env.*
+!.env.example
+
+# Ignore Docker metadata
+docker-compose.yml
+compose.yaml
+compose.*.yaml
+Dockerfile
+Dockerfile.*
